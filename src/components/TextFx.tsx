@@ -39,7 +39,7 @@ function TextFx({
       animate={selectedAnimation.animate}
       transition={transition}
       className={cn(
-        "inline-block bg-clip-text text-transparent bg-cover bg-center bg-no-repeat",
+        "bg-clip-text text-transparent bg-cover bg-center bg-no-repeat",
         !backgroundImage && variants[variant],
         animation === "shimmer" && "bg-size-[200%_200%]",
         className,
