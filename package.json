@@ -21,6 +21,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsup src/index.ts --format esm,cjs --dts --tsconfig tsconfig.app.json",
+    "build:app": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "prepublishOnly": "npm run build"
