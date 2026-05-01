@@ -1,5 +1,6 @@
 import type { Transition } from "motion/react";
 import { motion } from "motion/react";
+import type { CSSProperties } from "react";
 import { cn } from "../utils";
 import {
   animationVariants,
@@ -33,22 +34,24 @@ function TextFx({
     ...(delay !== undefined ? { delay } : {}),
   };
 
+  const inlineStyle: CSSProperties = {
+    WebkitBackgroundClip: "text",
+    backgroundClip: "text",
+    color: "transparent",
+    backgroundImage: backgroundImage
+      ? `url(${backgroundImage})`
+      : variants[variant],
+    backgroundSize: animation === "shimmer" ? "200% 200%" : "cover",
+    backgroundRepeat: "no-repeat",
+  };
+
   return (
     <motion.span
       initial={selectedAnimation.initial}
       animate={selectedAnimation.animate}
       transition={transition}
-      className={cn(
-        "bg-clip-text text-transparent bg-cover bg-center bg-no-repeat",
-        !backgroundImage && variants[variant],
-        animation === "shimmer" && "bg-size-[200%_200%]",
-        className,
-      )}
-      style={
-        backgroundImage
-          ? { backgroundImage: `url(${backgroundImage})` }
-          : undefined
-      }
+      className={cn(className)}
+      style={inlineStyle}
     >
       {text}
     </motion.span>

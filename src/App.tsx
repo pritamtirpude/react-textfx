@@ -165,7 +165,7 @@ function App() {
               <TextFx
                 text="Brand Aligned"
                 animation="none"
-                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
+                backgroundImage="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=1200&q=80"
                 className="text-4xl font-black"
               />
             </div>
