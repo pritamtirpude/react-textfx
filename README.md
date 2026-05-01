@@ -4,9 +4,9 @@
 
 **Animated gradient text for React — drop-in, zero config, TypeScript ready.**
 
-[![npm version](https://img.shields.io/npm/v/react-textfx?style=flat-square&color=7c3aed)](https://www.npmjs.com/package/react-textfx)
-[![license](https://img.shields.io/npm/l/react-textfx?style=flat-square&color=7c3aed)](./LICENSE)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/react-textfx?style=flat-square&color=7c3aed)](https://bundlephobia.com/package/react-textfx)
+[![npm version](https://img.shields.io/npm/v/%40pritamtirpude%2Freact-textfx?style=flat-square&color=7c3aed)](https://www.npmjs.com/package/@pritamtirpude/react-textfx)
+[![license](https://img.shields.io/npm/l/%40pritamtirpude%2Freact-textfx?style=flat-square&color=7c3aed)](./LICENSE)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/%40pritamtirpude%2Freact-textfx?style=flat-square&color=7c3aed)](https://bundlephobia.com/package/@pritamtirpude/react-textfx)
 [![React](https://img.shields.io/badge/React-%3E%3D18-61dafb?style=flat-square)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-ready-3178c6?style=flat-square)](https://www.typescriptlang.org)
 
@@ -18,7 +18,7 @@
 
 ## Overview
 
-`react-textfx` is a tiny, performant React component that wraps any string in a **clip-masked gradient** and optionally animates it with fluid, physics-inspired motion.
+`@pritamtirpude/react-textfx` is a tiny, performant React component that wraps any string in a **clip-masked gradient** and optionally animates it with fluid, physics-inspired motion.
 
 - **13 built-in gradient presets** — instagram, fire, aurora, neon, and more
 - **5 animation modes** — shimmer, fadeIn, slideUp, pop, or none
@@ -43,13 +43,13 @@ npm run dev
 
 ```bash
 # npm
-npm install react-textfx
+npm install @pritamtirpude/react-textfx
 
 # pnpm
-pnpm add react-textfx
+pnpm add @pritamtirpude/react-textfx
 
 # yarn
-yarn add react-textfx
+yarn add @pritamtirpude/react-textfx
 ```
 
 ### Peer Dependencies
@@ -66,14 +66,14 @@ yarn add react-textfx
 npm install react react-dom motion
 ```
 
-> **Tailwind CSS is NOT required** — gradient classes are generated at build time and inlined. You can use `react-textfx` in any project without Tailwind installed.
+> **Tailwind CSS is NOT required** — gradient classes are generated at build time and inlined. You can use `@pritamtirpude/react-textfx` in any project without Tailwind installed.
 
 ---
 
 ## Quick Start
 
 ```tsx
-import { TextFx } from "react-textfx";
+import { TextFx } from "@pritamtirpude/react-textfx";
 
 export default function Hero() {
   return (
@@ -99,7 +99,7 @@ export default function Hero() {
 The single named export of this library.
 
 ```tsx
-import { TextFx } from "react-textfx";
+import { TextFx } from "@pritamtirpude/react-textfx";
 ```
 
 #### Props
@@ -118,7 +118,10 @@ import { TextFx } from "react-textfx";
 #### Type Exports
 
 ```ts
-import type { TextFxVariant, TextFxAnimationVariant } from "react-textfx";
+import type {
+  TextFxVariant,
+  TextFxAnimationVariant,
+} from "@pritamtirpude/react-textfx";
 ```
 
 ---

@@ -1,5 +1,5 @@
 {
-  "name": "react-textfx",
+  "name": "@pritamtirpude/react-textfx",
   "private": false,
   "version": "1.0.0",
   "type": "module",
@@ -17,6 +17,7 @@
     "dist"
   ],
   "sideEffects": false,
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsup src/index.ts --format esm,cjs --dts --tsconfig tsconfig.app.json",
