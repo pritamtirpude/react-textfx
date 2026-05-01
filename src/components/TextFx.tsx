@@ -15,7 +15,7 @@ type TextFxProps = {
   className?: string;
   duration?: number;
   delay?: number;
-};
+} & React.HTMLAttributes<HTMLSpanElement>;
 
 function TextFx({
   text,
