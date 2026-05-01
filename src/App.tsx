@@ -97,7 +97,7 @@ function App() {
             install
           </span>
           <code className="font-mono text-sm text-emerald-400">
-            npm install react-textfx
+            npm install @pritamtirpude/react-textfx
           </code>
         </div>
       </section>
@@ -190,7 +190,7 @@ function App() {
             <span className="h-3 w-3 rounded-full bg-green-500/50" />
           </div>
           <pre className="overflow-x-auto p-6 text-sm leading-relaxed font-mono text-white/75">
-            <code>{`import TextFx from "react-textfx";
+            <code>{`import TextFx from "@pritamtirpude/react-textfx";
 
 <TextFx
   text="Hello, world"
